@@ -1,3 +1,5 @@
+//get arg
+const args = process.argv.slice(2).at(0);
 console.log(args.at(0));
 
 
