@@ -12,7 +12,7 @@ const checkAndRestartServer = async () => {
         const response = await fetch(url+"resources", { method : "GET", headers });
         const data = await response.json();
         const ramUsed = data.attributes.resources.memory_bytes / (1024 * 1024 * 1024); // Convert bytes to GB
-        if (ramUsed > 3) {
+        if (ramUsed > 6) {
             axios({
                 url: url + 'command',
                 method: 'POST',
@@ -35,5 +35,5 @@ const checkAndRestartServer = async () => {
     }
 };
 
-// Vérifier toutes les 3 minutes (300 000 millisecondes)
-setInterval(checkAndRestartServer, 10000);
+// Vérifier toutes les 3 minutes (180000 millisecondes)
+setInterval(checkAndRestartServer, 180000);
