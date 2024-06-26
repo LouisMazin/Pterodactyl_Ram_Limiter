@@ -3,7 +3,7 @@ const url = "https://panel.louismazin.ovh/api/client/servers/5d43809c/";
 const headers = {
     "Accept": "application/json",
     "Content-Type": "application/json",
-    "Authorization": "Bearer ptlc_IC2yXJgqEFuZp0KwiP31hCo8DBy75Nc9FNX3nn3f6s0"
+    "Authorization": "Bearer "+process.argv.slice(2).at(0)
 };
 const body_message = { "command": 'Broadcast Vidage_de_la_RAM_en_cours._Redémarrage_du_serveur.'};
 const body_restart = { "signal": "restart" };
