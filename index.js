@@ -1,3 +1,6 @@
+console.log(args.at(0));
+
+
 const axios = require('axios');
 const url = "https://panel.louismazin.ovh/api/client/servers/5d43809c/";
 const headers = {
