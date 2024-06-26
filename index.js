@@ -1,14 +1,9 @@
-//get arg
-const args = process.argv.slice(2).at(0);
-console.log(args.at(0));
-
-
 const axios = require('axios');
 const url = "https://panel.louismazin.ovh/api/client/servers/5d43809c/";
 const headers = {
     "Accept": "application/json",
     "Content-Type": "application/json",
-    "Authorization": "Bearer "+process.argv.slice(2).at(0)
+    "Authorization": "Bearer "+process.argv.slice(2).toString()
 };
 const body_message = { "command": 'Broadcast Vidage_de_la_RAM_en_cours._Redémarrage_du_serveur.'};
 const body_restart = { "signal": "restart" };
