@@ -1,5 +1,5 @@
 const axios = require('axios');
-const url = "https://panel.louismazin.ovh/api/client/servers/5d43809c/";
+const url = "https://panel.louismazin.ovh/api/client/servers/c1e3ad72/";
 const headers = {
     "Accept": "application/json",
     "Content-Type": "application/json",
