@@ -24,10 +24,10 @@ const checkAndRestartServer = async () => {
                 headers: headers,
                 data: body_restart,
             })
-            console.log("La RAM utilisée est supérieure à 6 Go. Redémarrage du serveur nécessaire.");
+            console.log("La RAM utilisée est supérieure à 6.5 Go. Redémarrage du serveur nécessaire.");
 
         } else {
-            console.log("La RAM utilisée est inférieure ou égale à 6 Go. Aucune action requise.");
+            console.log("La RAM utilisée est inférieure ou égale à 6.5 Go. Aucune action requise.");
         }
     } catch (error) {
         console.error("Une erreur s'est produite lors de la vérification de la RAM :", error);
