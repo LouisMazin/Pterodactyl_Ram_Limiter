@@ -11,8 +11,7 @@ const checkAndRestartServer = async () => {
     try {
         const response = await fetch(url+"resources", { method : "GET", headers });
         const data = await response.json();
-        const ramUsed = data.attributes.resources.memory_bytes / (1024 * 1024 * 1024); // Convert bytes to GB
-        if (ramUsed > 6) {
+        if (data.attributes.resources.memory_bytes > 7516192768) { // 7 Go
             axios({
                 url: url + 'command',
                 method: 'POST',
