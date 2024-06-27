@@ -35,4 +35,5 @@ const checkAndRestartServer = async () => {
 };
 
 // Vérifier toutes les 3 minutes (180000 millisecondes)
+console.log("Observer started !")
 setInterval(checkAndRestartServer, 180000);
